@@ -33,8 +33,8 @@ def main():
     T = N/sr
     freq = n/T 
 
-    #plt.stem(freq, np.abs(X))
-    plt.stem(freq, np.abs(X), 'b', markerfmt=" ", basefmt="-b")
+    plt.stem(freq, np.abs(X))
+    #plt.stem(freq, np.abs(X), 'b', markerfmt=" ", basefmt="-b")
     plt.show()
 
     plt.plot(t, ifft(X))
